@@ -1,0 +1,401 @@
+/*
+	Custom CSS
+	by: Thomas Dexter 
+	www.tsdexter.com
+
+*/
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Center Content with no wrapper */
+html {
+	height: 100%;
+	background-color: #999;
+}
+body {
+	background-color: #fff;
+	font-family: Anton, helvetica, Verdana, sans-serif;
+	line-height: 1em;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #222;
+	letter-spacing: 3px;
+	width: 960px;
+	margin: 0 auto;
+	min-height: 100%;
+	-webkit-box-shadow: 0 0 20px #000;
+	position: relative;
+}
+
+/* Header */
+header > h1 + img{
+	position: relative;
+	left: 110px;
+}
+hr {
+	width: 810px;
+	border: 1px solid #222;
+	margin: 0 auto;
+}
+hr + p {
+	margin: 0 75px;
+}
+
+/* Image Replacement */
+h1 {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	width: 320px;
+	height: 135px;
+	overflow: hidden; /* Hides the actual text unless styles disabled */
+	position: relative;
+	left: 30px;
+}
+h2 {
+	font-weight: normal;
+	margin: 20px;
+}
+h3 {
+	position: relative;
+	left: 500px;
+	top: 30px;
+	font-weight: normal;
+}
+h3:nth-of-type(2) {
+	top: 115px;
+}
+
+/* Content Area */
+body > section:nth-of-type(1) {
+	-webkit-box-shadow: 0 0 5px #111;
+	background-color: #fff;
+	width: 810px;
+	height: 380px;
+	position: relative;	
+	left: 75px;
+	top: 20px;
+	overflow: hidden;
+}
+
+/* CSS3 Box reflect - Gradient applied as mask so only half of box is reflected */
+section img {
+	-webkit-box-reflect: below -65px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.55, transparent), to(rgba(255, 255, 255, 0.5)));
+}
+
+/* Absolute position used for car customizr to minimize css/js use */
+section img, section a {
+	position: absolute;
+}
+section a {
+	display: block;
+	width: 40px; height: 20px;
+	overflow: hidden;
+}
+
+/* Links */
+a[href="#addtotrailer"], div > a {
+	-webkit-transition: all .1s ease;
+	position: relative;
+	top: 200px;
+	left: 500px;
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #222;
+	width: 138px;
+	padding: 3px 0 0 4px;
+	-webkit-box-shadow: 0px 0px 10px #000;
+	border: 1px solid rgba(255,255,255,1);
+}
+a[href="#addtotrailer"]:hover, div > a:hover {
+	-webkit-transform-origin: center left;
+	color: #222;
+	background-color: #999;
+}
+a[href="#addtotrailer"]:active, div > a:active {
+	color: #fff;
+	background-color: #222;
+}
+div > a {
+	position: absolute;
+	top: 120px;
+	left: 475px;
+	padding-left: 15px;
+	padding-bottom: 3px;
+}
+
+/* Place color choosers to the right */
+section a:nth-of-type(1){top: 120px;left: 500px;}
+section a:nth-of-type(2){top: 120px;left: 540px;}
+section a:nth-of-type(3){top: 120px;left: 580px;}
+section a:nth-of-type(4){top: 120px;left: 620px;}
+section a:nth-of-type(5){top: 120px;left: 660px;}
+section a:nth-of-type(6){top: 120px;left: 700px;}
+section a:nth-of-type(7){top: 120px;left: 740px;}
+section img {
+	-webkit-transition: opacity 1s ease;
+	opacity: 0;
+	top: 30px;
+}
+
+/* Always have the first (lowest zindex) img shown so that when fading it doesn't go blank first */
+section a:nth-of-type(1) + img {
+	opacity: 1;
+}
+section a span {
+	display: block;
+	width: 40px;height: 20px;
+}
+
+/* Add colours to the spans for colour chooser */
+section a:nth-of-type(1) > span{background-color:green;}
+section a:nth-of-type(2) > span{background-color:blue;}
+section a:nth-of-type(3) > span{background-color:orange;}
+section a:nth-of-type(4) > span{background-color:pink;}
+section a:nth-of-type(5) > span{background-color:purple;}
+section a:nth-of-type(6) > span{background-color:red;}
+section a:nth-of-type(7) > span{background-color:turquoise;}
+section a {
+	-webkit-transition: all .5s ease;
+	border: 1px solid rgba(255,255,255,0);
+}
+section a.active {
+	-webkit-transform: scale(1.2);
+	-webkit-box-shadow: 0px 0px 10px #000;
+	border: 1px solid rgba(255,255,255,1);
+	z-index: 10;
+}
+section a.active + img{
+	opacity: 1.0;
+}
+/* WOOD Chooser */
+section a:nth-of-type(8){top: 220px;left: 500px;}
+section a:nth-of-type(9){top: 220px;left: 540px;}
+section a:nth-of-type(10){top: 220px;left: 580px;}
+section a:nth-of-type(11){top: 220px;left: 620px;}
+
+/* Textured backgrounds */
+section a:nth-of-type(8) > span{background:url('images/cherrywood.png');}
+section a:nth-of-type(9) > span{background:url('images/darkwood.png');}
+section a:nth-of-type(10) > span{background:url('images/richwood.png');}
+section a:nth-of-type(11) > span{background:url('images/stockwood.png');}
+
+/* NAVIGATION custom CSS3/Mac OS dock style menu */
+nav > ul {
+	width: 960px;
+	text-align: center;
+	width: 1060px;
+	position: relative;
+	left: -50px;
+}
+nav > ul > li > a {
+	display: block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 10px;
+}
+nav > ul > li {
+	-webkit-box-reflect: below -18px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+	position: relative;
+	-webkit-transition: all .4s ease;
+	list-style-type: none;
+	display: inline-block;
+}
+nav > ul > li > a > span {
+	-webkit-transition: background-color .4s ease;	
+	position: relative;
+	top: -10px;
+	padding: 1px 2px 1px 5px;
+	border-radius: 40px;
+	opacity: 0;
+}
+nav > ul > li > a:hover > span {
+	background-color: #222;
+	opacity: .8;
+}
+
+/* Element being hovered */
+nav > ul > li:hover,nav > ul > li.active {
+	-webkit-box-reflect: below -18px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+	-webkit-transform-origin: center center;
+	-webkit-transform: scale(1.8);
+	margin: 0px 24px;
+}
+
+/* Elements next to the hover on either side  */
+nav > ul > li.halfactive {
+	-webkit-transition-delay: .1s;
+	-webkit-transform-origin: center center;
+	-webkit-transform: scale(1.3);
+	margin: 0 21px;
+}
+
+/* Elements 2 down from hovered on either side */
+nav > ul > li.quarteractive {
+	-webkit-transition-delay: .1s;
+	-webkit-transform-origin: center center;
+	-webkit-transform: scale(1.1);
+	margin: 0 18px;
+}
+
+/*  Shopping Cart/'trailer' animate when adding  */
+@-webkit-keyframes addtotrailer {
+	0% { 
+		top: 300px;
+		left: 65px; 
+		-webkit-transform: scaleX(1) scaleY(1) rotateY(0deg) rotateX(0deg) rotateZ(-0deg) skew(0deg);
+	}
+	100% {
+		-webkit-transform: scaleX(.5) scaleY(.9) rotateY(140deg) rotateX(65deg) rotateZ(-10deg) skew(15deg);
+		top: 25px;
+		left: 890px;
+	}
+}
+
+/* Add the animation */
+div:first-of-type > ul > li {
+	position: absolute;
+	display: block;
+	list-style-type: none;
+	display: inline-block;
+	margin: 10px;
+	top: 20px;
+	left: 880px;
+	-webkit-transform: scaleX(.5) scaleY(.9) rotateY(140deg) rotateX(65deg) rotateZ(-10deg) skew(15deg);
+	-webkit-animation-name: addtotrailer;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+}
+div > ul > li > img {
+	position: absolute;
+}
+
+/* Car Info section */
+body > section:nth-of-type(2) {
+	-webkit-box-shadow: 0 0 5px #111;
+	background-color: #fff;
+	width: 810px;
+	position: relative;	
+	left: 75px;
+	top: 20px;
+	overflow: hidden;
+	padding-bottom: 15px;
+	margin-top: 15px;
+}
+body section > ul {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* CSS COLUMN LAYOUT */
+body section > ul > li {
+	display: inline-block; /* Line up the columns */
+	width: 30%; /* 3 columns = 1/3 of the width per column */
+	margin: 0 1%; 
+	text-align: justify; /* Columns always look better with lined up edges */
+	vertical-align: top; /* Align each column by their tops */
+	letter-spacing: normal;
+}
+body section > ul > li > p {
+	font-family: helvetica, verdana, sans-serif; /* More legible font than the headers */
+	text-transform: none;
+	font-size: 12px;
+}
+h4 {
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+/* Footer */
+footer {
+	padding: 50px;
+	text-align: center;
+	font-weight: normal;
+}
+footer a {
+	text-decoration: none;
+	border-bottom: 1px dotted #222;
+	color: #222;
+}
+
+/* Shopping Cart/'trailer' Only shows when clicked on as an overlay */
+div:last-of-type {
+	-webkit-transition: all 1s ease;
+	position: absolute;
+	width: 760px;
+	top: 100px;
+	left: 100px;
+	background-color: rgba(0,0,0,.8);
+	z-index: 99999; /* bring to top of all content */
+	opacity: 0;
+	display: none;
+	-webkit-border-radius: 10px;
+}
+div > hgroup {
+	position: relative;
+}
+/* close button for overlay */
+div span {
+	-webkit-border-radius: 20px;
+	background-color: #fff;
+	border: 2px solid #000;
+	display: block;
+	width: 14px;
+	height: 19px;
+	opacity: 1;
+	padding: 1px 0 0 6px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	-webkit-transform: scale(2);
+}
+div > hgroup > h1 {
+	padding-top: 10px;
+	color: #fff;
+	font-weight: normal;
+}
+div span:hover {
+	background-color: #000;
+	border: 2px solid #fff;
+	color: #fff;	
+}
+div span:hover a {
+	color: #fff;
+}
+div span a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* List of items in the cart */
+div:last-of-type > ul {
+	background-color: #fff;
+	width: 80%;
+	margin: 0px auto 30px auto;
+	position: relative;
+	top: -40px;
+	-webkit-border-radius: 10px;
+}
+div:last-of-type > ul > li {
+	position: relative;
+	width: 510px;
+	height: 300px;
+	margin-left: 40px;
+	list-style-type: none;
+}
+
+
+
+
+
+
+
+

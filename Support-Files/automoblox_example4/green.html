@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset=utf-8>
+	<title>Automoblox | Home</title>	
+	<style type="text/css">
+		@import url('./css/reset.css');
+		@import url('./css/style.css');
+	</style>	
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><h1><a href="index.html"	id="home">Automoblox</a></h1></li>
+				<li><a href="red.html" 			id="red">Red</a></li>
+				<li><a href="green.html" 		id="green" class="selected">Green</a></li>
+				<li><a href="blue.html" 		id="blue">Blue</a></li>
+				<li><a href="black.html" 		id="black">Black</a></li>
+				<li><a href="white.html" 		id="white">White</a></li>
+			</ul>
+		</nav>
+		<div id="search">
+			<input type="text" id="searching"/>
+		</div>
+	</header>
+	
+	<div id="content">
+		<section class="not-home">
+			<hgroup>
+				<h1>Green</h1>
+				<h2>X9X 4x4</h2>
+			</hgroup>
+			<img src="images/green_s.jpg" width="510" height="300" alt="car">
+			<h3>Car specs:</h3>
+			<dl>
+				<dt>Length:</dt>
+				<dd>15cm</dd>
+				<dt>Width:</dt>
+				<dd>9cm</dd>
+				<dt>Height:</dt>
+				<dd>10cm</dd>
+				<dt>Price:</dt>
+				<dd>$24.99</dd>
+			</dl>
+			<button	type="submit">Add to cart</button>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		
+		<aside class="not-home">
+			<h3>Shopping Cart</h3>
+				<table>
+					<tbody>
+						<tr>
+							<th id="">Product</th>
+							<th id="">Quantity</th>
+							<th id="">Price</th>
+						</tr>
+						<tr>
+							<td id="">Green - X9X</td>
+							<td id="">1</td>
+							<td id="">$24.99</td>
+						</tr>
+					</tbody>
+				</table>
+				<span id="total">Total: $24.99</span>
+				<button type="submit" id="check">Checkout</button>
+		
+			<h3>Contact</h3>
+			<form>
+				<input 		placeholder="Name (required)">
+				<input 		placeholder="Email (required)">
+				<textarea 	placeholder="Your message/comment (required)"></textarea>
+				<button 	type="submit">Submit</button>
+			</form>
+			<div class="vcard">
+				<p class="org">Automoblox<a href="http://suda.co.uk/projects/X2V/get-vcard.php?uri=http://webdesign3.georgianc.on.ca/~100147578/auto/">
+<img src="images/vcard.png" alt="download vcard icon" title="download vcard"></a></p>
+				<div class="adr">
+					<p class="street-address">18 N Salem St - Unit B</p>
+					<p><span class="locality">Dover </span><abbr class="region" title="New Jersey">NY </abbr><span class="postal-code">07801</span></p>
+					<p class="country-name">United States</p>
+				</div>
+				<div class="telecommunications">
+					<p class="tel">Phone: <span class="tel"></span><span class="type">Work</span>: <span class="value">(973)442-9444</span></p>
+				</div>
+			</div>
+			<ul id="social">
+				<li><a href="" id="twitter">twitter</a></li>
+				<li><a href="" id="facebook">facebook</a></li>
+				<li><a href="" id="youtube">youtube</a></li>
+			</ul>
+		</aside>
+	</div>
+	
+	<footer>
+		<p>&copy; 2011 <a href="http://webXcelerate.com" title="webXcelerate homepage">webXcelerate.com</a>. All rights reserved.</p>
+	</footer>
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="scripts/main.js"></script>
+	
+</body>
+</html>
+

@@ -1,0 +1,251 @@
+body{
+font-family:Verdana, Geneva, sans-serif; 
+font-size:100%;
+border:none;
+margin:0;
+background: url(../images/grid.png) #03C;
+color:#FFF;
+}
+#wrapper{
+margin: 0px auto 0 auto; 
+width:110%; 
+height:100%; 
+max-width:1067px;
+min-width:800px; 
+border-right:1px dashed #fff; 
+border-left:1px dashed #fff;
+}
+#nav{ 
+position:absolute; 
+margin:0 0 0em 4em; 
+padding:0 0 0 80px; 
+width: 364px; 
+height: 100px; 
+z-index:2; 
+color:#FFF;
+}
+ul {
+padding: 0;
+list-style: none;
+margin:.5em 0 0 0;
+width:500px;
+}
+li {
+float: left;
+position: relative;
+margin: 0 1em 0 0;
+height:21px;
+z-index:800;
+}
+
+a{ color:#FFF;
+text-decoration:none;
+border:none;
+}
+
+#nav li:hover{ color:#FFF;
+text-decoration:none;
+border-bottom:3px solid #fff;
+}
+
+#header{
+height:200px;
+margin:10px 0 0 4em;
+width:423px;
+background: url(../images/automoblox-gridlo.png) top left no-repeat;
+}
+#header > h1{
+position:absolute;
+left:-9000px;
+}
+#enter{
+height:200px;
+margin:20% auto 0 auto;
+width:423px;
+background: url(../images/automoblox-gridlo.png) top left no-repeat;
+}
+#enter > h1{
+position:absolute;
+left:-9000px;
+}
+#ehere{
+display:block;
+width:100px;
+margin:0px auto 0 auto;
+}
+#content{
+background: none;
+margin:15px 0 0 0;
+width:100%;
+height:100%;
+max-width:1067px;
+min-width:800px;
+}
+#describe{
+width:46.5%;
+height:157px;
+margin:-7em 2% 0 0;
+padding: 0;
+float:right;
+font-size: x-small;
+position:relative;
+z-index:650;
+}
+#describe > p{
+line-height:2em;
+text-align:right;
+padding:0 2em 0 0;
+}
+.news{clear:both;
+margin:1px 0 0 0;
+height:150px;
+padding:0 0 0 0;
+}
+.news > h3{
+background:#fff;
+display:block;
+height:35px;
+margin:0 0 0 0;
+padding:10px 0 0 0;
+border-top:1px dashed #fff;
+text-align:center;
+color:#03C;
+
+}
+.news > div{
+float:left;
+width:31%;
+height:150px;
+margin:0 0 0 0px;
+font-size:11px;
+line-height:18px;
+padding:10px 10px 0 13px;
+border-left:1px dashed #fff;
+border-bottom:1px dashed #fff;
+border-top:1px dashed #fff;
+text-align:justify;
+}
+.news a{font-weight:bold;}
+
+#describe > h1{
+margin:0 0 0 0 ;
+padding:0 1em 0 0;
+}
+
+#describe2{
+width:46.5%;
+height:157px;
+margin:-8em 2% 0 0;
+padding: 0;
+float:right;
+font-size: x-small;
+position:relative;
+z-index:650;
+}
+#describe2 > p{
+line-height:2em;
+text-align:right;
+padding:1em 2em 0 0;
+}
+#describe2 > h1{
+margin:0 0 -.5em 0 ;
+padding:0 1em 0 0;
+}
+h3{
+margin:0 0 0 0;
+text-align:left;
+}
+.inside{
+width:520px;
+height:231px;
+margin:5em 0 0 1.5em;
+clear:both;
+z-index:700;
+position: absolute;
+clear:both;
+}
+.inside h5{
+	margin:-10px 0 0 0;
+	text-align:center;}
+.inside img {
+opacity: 1;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 500ms;
+}
+.inside img:hover{
+opacity: 0;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 500ms;
+} 
+.inside #dou{
+opacity: 0;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 500ms;
+position:absolute;
+margin:-230px 0 0 0;
+}
+
+.inside #dou:hover{
+opacity: 1;
+-webkit-transition: opacity;
+-webkit-transition-timing-function: ease-out;
+-webkit-transition-duration: 1000ms;
+}
+
+.aboutme{
+background: none;
+min-height:150px;
+float:right;
+margin: 2% 2% 4% 0;
+width:100%;
+clear:both;
+}
+.thumbs{
+width:48%;
+min-height:150px;
+float:right;
+margin: 30px 0 8% 0;
+clear:both;
+}
+.tnails{
+margin:0 0 0 0;
+padding:0 0 0 18px;
+}
+.tnails li{
+list-style:none;
+margin:10px 10px 0px 10px;
+width:20%;
+height:60px;
+float:left;
+border:none;
+}
+
+.tnails li a{
+border:none;
+text-transform:none;
+background:none;
+color: rgba(255, 255, 255, 0.0); /*trick to get rid of color for the text in most up to date browsers*/ 
+}
+.thumbs > h2{
+display:block;
+background: url(../images/select.png);
+height:50px;
+clear:left;
+margin:0 0 0 0;
+text-indent:-9999px;
+overflow:hidden;
+}
+.footer{
+margin:0;
+clear:both;
+text-align:center;
+font-size:1em;
+height:3em;
+border:1px dashed #fff;
+}
+h1{
+text-align:right;
+}

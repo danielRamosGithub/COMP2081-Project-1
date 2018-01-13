@@ -1,0 +1,159 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+	display:block;
+}
+
+html{
+	background:#000;
+}
+
+body{
+	font:100%/1.3 Arial, Helvetica, sans-serif;
+	background:url(../images/background.jpg) no-repeat center;
+	width:960px;
+	margin:0 auto;
+}
+
+/*HEADER*/
+
+header > hgroup > h1{
+	width: 210px;
+	height: 98px;
+	display: inline-block;
+	overflow: hidden; /* image replacement via h1 with an image that is the full size set here so the text overflows and gets hidden */
+	margin:20px 0 20px 50px;
+}
+
+header > hgroup > h2{
+	width: 391px;
+	height: 72px;
+	float:right;
+	overflow: hidden; /* image replacement via h1 with an image that is the full size set here so the text overflows and gets hidden */
+	margin:40px 50px 0 0;
+}
+
+/*NAVIGATION*/
+
+nav{
+	background:url(../images/nav_bg.gif) repeat-x left;
+	width:960px;
+	height:55px;
+}
+
+nav > ul{
+	height:55px;
+	width:900px;
+	padding:15px 0 0 20px;
+	margin:0 auto;
+}
+
+nav > ul > li{
+	display:inline-block;
+	text-align:center;
+}
+
+nav > ul > li > a{
+	text-decoration:none;
+	font-size:150%;
+	color:#EAD8B4;
+    text-shadow: 0px 2px 1px #000;
+	display:inline-block;
+	width:140px;
+	height:30px;
+}
+
+nav > ul > li > a:hover{
+	background:url(../images/paintstroke.gif) no-repeat center;
+}
+
+li.selected {
+	background:url(../images/paintstroke.png) no-repeat center;
+}
+
+/*CONTENT*/
+
+section:nth-of-type(1){
+	background:url(../images/maincon_bg.png) no-repeat center;
+	width:860px;
+	margin:50px auto 0 auto;
+	height:275px;
+}
+
+#about{
+	background:none;
+	margin:15px 0 0 30px;
+	padding:0;
+}
+
+#about > h1{
+	font-weight:bold;
+	color:#FF0030;
+	font-size:150%;	
+	margin:0 0 15px 0;
+	padding:0;
+}
+
+#about > p{
+	width:400px;
+	font-size:100%;
+	margin:0;
+	padding:0;
+}
+
+section:nth-of-type(1) > figure{
+	float:left;
+	margin:15px 0 0 15px;
+}
+
+section:nth-of-type(2) > div > h1{
+	font-weight:bold;
+	color:#FF0030;
+	margin:10px 0 0 10px;
+}
+
+section:nth-of-type(2) > div > p{
+	font-size:80%;
+	font-weight:bold;
+	margin:10px;
+}
+
+div{
+	background:url(../images/smallcon_bg.png) no-repeat center;
+	width:270px;
+	height:182px;
+	display:inline-block;
+	margin:40px 20px 0 0;
+	vertical-align:top;
+	-moz-box-orient:vertical;
+}
+
+div:nth-of-type(1){
+	margin-left:50px;
+}
+
+/*FOOTER*/
+
+footer{
+	background:url(../images/shelf.png) no-repeat center;
+	width:825px;
+	height:200px;
+	margin:50px auto 0 auto;
+}
+
+footer > figure:nth-of-type(1){
+	margin:0 0 0 50px;
+}
+
+footer > figure{
+	display:inline-block;
+	padding-right:15px;
+}
+
+footer > p{
+	position:relative;
+	background:url(../images/copyright.png) no-repeat center;
+	width:250px;
+	height:20px;
+	margin:0 auto;
+	top:50px;
+}
